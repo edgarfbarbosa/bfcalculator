@@ -1,0 +1,7 @@
+header {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 900;
+    justify-content: center;
+    min-height: 10vh;
+}
