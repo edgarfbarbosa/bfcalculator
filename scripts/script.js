@@ -10,8 +10,10 @@ const btnCalculateForm = document.getElementById('btnCalculateForm')
 genderSelect.addEventListener('input', () => {
     let node = document.getElementById('node')
 
-    if (genderSelect.value == "male") {
-        node.parentNode.removeChild(node)
+    if (genderSelect.value == 'male') {
+        node.style.visibility = 'hidden'
+    } else {
+        node.style.visibility = 'visible'
     }
 })
 
