@@ -7,9 +7,12 @@ const waistInput = document.getElementById('waist')
 const hipInput = document.getElementById('hip')
 const btnCalculateForm = document.getElementById('btnCalculateForm')
 
-genderSelect.addEventListener('input', event => {
-    console.log(event.target.value)
-    event.target.value
+genderSelect.addEventListener('input', () => {
+    let node = document.getElementById('node')
+
+    if (genderSelect.value == "male") {
+        node.parentNode.removeChild(node)
+    }
 })
 
 btnCalculateForm.addEventListener('click', event => {
