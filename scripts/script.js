@@ -18,6 +18,11 @@ genderSelect.addEventListener('input', () => {
 })
 
 btnCalculateForm.addEventListener('click', event => {
-    console.log(event.preventDefault)
     event.preventDefault()
+
+    let calc = (495 / ((1.0324 - 0.19077 * Math.log10(waistInput.value - neckInput.value)) + (0.15456 * Math.log10(heightInput.value)))) - 450
+
+    if (genderSelect.value == 'male') {
+        console.log(calc.toFixed(1))
+    }
 })
