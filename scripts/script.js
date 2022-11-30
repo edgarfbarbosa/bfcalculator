@@ -20,8 +20,9 @@ genderSelect.addEventListener('input', () => {
 btnCalculateForm.addEventListener('click', event => {
     event.preventDefault()
 
+    let waistHipNeck = parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value)
     let calcBFPMale = (495 / ((1.0324 - 0.19077 * Math.log10(waistInput.value - neckInput.value)) + (0.15456 * Math.log10(heightInput.value)))) - 450
-    let calcBFPFemale = (495 / ((1.29579 - 0.35004 * Math.log10(waistInput.value + hipInput.value - neckInput.value)) + (0.22100 * Math.log10(heightInput.value)))) - 450
+    let calcBFPFemale = (495 / ((1.29579 - 0.35004 * Math.log10(waistHipNeck)) + (0.22100 * Math.log10(heightInput.value)))) - 450
 
     if (genderSelect.value == 'male') {
         console.log(calcBFPMale.toFixed(1))
