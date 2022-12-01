@@ -1,9 +1,8 @@
-html, body {
+html,
+body {
+    background-color: #383838;
     box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Figtree', sans-serif;
 }
