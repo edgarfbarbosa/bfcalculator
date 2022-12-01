@@ -6,6 +6,7 @@ const neckInput = document.getElementById('neck')
 const waistInput = document.getElementById('waist')
 const hipInput = document.getElementById('hip')
 const btnCalculate = document.getElementById('btnCalculate')
+const btnClear = document.getElementById('btnClear')
 
 genderSelect.addEventListener('input', () => {
     let node = document.getElementById('node')
@@ -25,4 +26,13 @@ btnCalculate.addEventListener('click', event => {
     } else {
         console.log(((495 / ((1.29579 - 0.35004 * Math.log10(parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value))) + (0.22100 * Math.log10(heightInput.value)))) - 450).toFixed(1))
     }
+})
+
+btnClear.addEventListener('click', () => {
+    ageInput.value = ''
+    weightInput.value = ''
+    heightInput.value = ''
+    neckInput.value = ''
+    waistInput.value = ''
+    hipInput.value = ''
 })
