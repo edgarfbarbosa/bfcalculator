@@ -1,21 +1,20 @@
-main {
+.main__container--display {
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     min-height: 85vh;
 }
 
-form {
+.form__container--display {
     align-items: center;
+    display: flex;
     flex-direction: column;
     height: 500px;
     justify-content: center;
+    line-height: 1.5;
     width: 500px;
 }
 
-form, input {
+.form__input {
     display: flex;
-}
-
-form, div {
-    line-height: 1.8;
 }

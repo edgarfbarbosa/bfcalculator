@@ -1,4 +1,5 @@
-footer {
+.footer__container--display {
+    align-items: center;
     display: flex;
     justify-content: center;
     min-height: 5vh;
