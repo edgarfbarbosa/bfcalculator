@@ -21,10 +21,18 @@ genderSelect.addEventListener('input', () => {
 btnCalculate.addEventListener('click', event => {
     event.preventDefault()
 
+    const resultCalcTitle = document.getElementById('resultCalcTitle')
+    const resultCalc = document.getElementById('resultCalc')
+
+    const calcBfpMasc = ((495 / ((1.0324 - 0.19077 * Math.log10(waistInput.value - neckInput.value)) + (0.15456 * Math.log10(heightInput.value)))) - 450).toFixed(1)
+    const calcBfpFem = ((495 / ((1.29579 - 0.35004 * Math.log10(parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value))) + (0.22100 * Math.log10(heightInput.value)))) - 450).toFixed(1)
+
+    resultCalcTitle.innerText = 'Resultado:'
+
     if (genderSelect.value == 'male') {
-        console.log(((495 / ((1.0324 - 0.19077 * Math.log10(waistInput.value - neckInput.value)) + (0.15456 * Math.log10(heightInput.value)))) - 450).toFixed(1))
+        resultCalc.innerText = calcBfpMasc
     } else {
-        console.log(((495 / ((1.29579 - 0.35004 * Math.log10(parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value))) + (0.22100 * Math.log10(heightInput.value)))) - 450).toFixed(1))
+        resultCalc.innerText = calcBfpFem
     }
 })
 
