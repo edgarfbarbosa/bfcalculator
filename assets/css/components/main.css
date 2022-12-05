@@ -5,6 +5,11 @@
     min-height: 85vh;
 }
 
+.content__container--display {
+    display: flex;
+    flex-direction: column;
+}
+
 .form__container--display {
     align-items: center;
     display: flex;
@@ -17,4 +22,12 @@
 
 .form__input {
     display: flex;
+}
+
+.result__container--display {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
 }

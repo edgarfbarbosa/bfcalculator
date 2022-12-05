@@ -22,48 +22,50 @@
         <h1 class="header__title--font">Body Fat Calculator</h1>
     </header>
     <main class="main__container--display">
-        <form class="form__container--display">
-            <div>
+        <div class="content__container--display">
+            <form class="form__container--display">
                 <div>
-                    <label for="gender">Sexo</label>
-                    <select id="gender">
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                    </select>
+                    <div>
+                        <label for="gender">Sexo</label>
+                        <select id="gender">
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age">Idade</label>
+                        <input class="form__input" type="number" id="age">
+                    </div>
+                    <div>
+                        <label for="weight">Peso</label>
+                        <input class="form__input" type="number" id="weight">
+                    </div>
+                    <div>
+                        <label for="height">Altura</label>
+                        <input class="form__input" type="number" id="height">
+                    </div>
+                    <div>
+                        <label for="neck">Pescoço</label>
+                        <input class="form__input" type="number" id="neck">
+                    </div>
+                    <div>
+                        <label for="waist">Cintura</label>
+                        <input class="form__input" type="number" id="waist">
+                    </div>
+                    <div id="node">
+                        <label for="hip">Quadril</label>
+                        <input class="form__input" type="number" id="hip">
+                    </div>
+                    <div>
+                        <button type="submit" id="btnCalculate">Calcular</button>
+                        <button type="submit" id="btnClear">Limpar</button>
+                    </div>
                 </div>
-                <div>
-                    <label for="age">Idade</label>
-                    <input class="form__input" type="number" id="age">
-                </div>
-                <div>
-                    <label for="weight">Peso</label>
-                    <input class="form__input" type="number" id="weight">
-                </div>
-                <div>
-                    <label for="height">Altura</label>
-                    <input class="form__input" type="number" id="height">
-                </div>
-                <div>
-                    <label for="neck">Pescoço</label>
-                    <input class="form__input" type="number" id="neck">
-                </div>
-                <div>
-                    <label for="waist">Cintura</label>
-                    <input class="form__input" type="number" id="waist">
-                </div>
-                <div id="node">
-                    <label for="hip">Quadril</label>
-                    <input class="form__input" type="number" id="hip">
-                </div>
-                <div>
-                    <button type="submit" id="btnCalculate">Calcular</button>
-                    <button type="submit" id="btnClear">Limpar</button>
-                </div>
+            </form>
+            <div class="result__container--display">
+                <h2 id="resultCalcTitle"></h2>
+                <p id="resultCalc"></p>
             </div>
-        </form>
-        <div>
-            <h2 id="resultCalcTitle"></h2>
-            <p id="resultCalc"></p>
         </div>
     </main>
     <footer class="footer__container--display">

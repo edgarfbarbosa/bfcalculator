@@ -30,9 +30,9 @@ btnCalculate.addEventListener('click', event => {
     resultCalcTitle.innerText = 'Resultado:'
 
     if (genderSelect.value == 'male') {
-        resultCalc.innerText = calcBfpMasc
+        resultCalc.innerText = `Seu percentual de gordura corporal é de: ${calcBfpMasc}%`
     } else {
-        resultCalc.innerText = calcBfpFem
+        resultCalc.innerText = `Seu percentual de gordura corporal é de: ${calcBfpFem}%`
     }
 })
 
