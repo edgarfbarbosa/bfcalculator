@@ -6,6 +6,6 @@
 }
 
 .header__title--font {
-    color: #fab23d;
     font-size: 4rem;
+    font-weight: 700;
 }
