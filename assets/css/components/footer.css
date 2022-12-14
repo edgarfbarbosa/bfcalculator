@@ -1,6 +1,11 @@
-.footer__container--display {
+.footer__container {
     align-items: center;
     display: flex;
     justify-content: center;
     min-height: 5vh;
+}
+
+.footer__link {
+    color: yellow;
+    text-decoration: none;
 }

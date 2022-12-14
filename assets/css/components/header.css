@@ -1,11 +1,11 @@
-.header__container--display {
+.header__container {
     align-items: center;
     display: flex;
     justify-content: center;
     min-height: 10vh;
 }
 
-.header__title--font {
+.header__title {
     font-size: 4rem;
     font-weight: 700;
 }
