@@ -2,10 +2,10 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    min-height: 5vh;
+    min-height: 10vh;
 }
 
 .footer__link {
-    color: #ffff00;
+    color: #f7bb0e;
     text-decoration: none;
 }
