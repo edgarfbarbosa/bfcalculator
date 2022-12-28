@@ -37,8 +37,9 @@
 }
 
 .form__btn {
-    background: linear-gradient(90deg, #f7bb0e, #ffc812);
+    background: #f7bb0e;
     border: none;
+    color: #151515;
     cursor: pointer;
     font-family: 'Figtree', sans-serif;
     font-size: 1.2rem;
@@ -51,7 +52,7 @@
 }
 
 .result__container {
-    color: #f7bb0e;
+    color: #d7d7d7;
     display: flex;
     flex-direction: column;
     justify-content: center;
