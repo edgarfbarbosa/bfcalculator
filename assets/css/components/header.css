@@ -6,7 +6,10 @@
 }
 
 .header__title {
-    color: #f7bb0e;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #ffe53b, #ff2525);
     font-size: 4rem;
     font-weight: 700;
+    -webkit-background-clip: text;
 }
