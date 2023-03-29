@@ -20,26 +20,21 @@ genderSelect.addEventListener('input', () => {
     }
 })
 
-btnCalculate.addEventListener('click', event => {
+function calcBfp(event) {
     event.preventDefault()
 
-    const resultCalcTitle = document.getElementById('resultCalcTitle')
-    const resultCalcBfp = document.getElementById('resultCalcBfp')
+    const calcBfpMasc = (495 / ((1.0324 - 0.19077 * Math.log10(parseInt(waistInput.value) - parseInt(neckInput.value))) +
+        (0.15456 * Math.log10(parseInt(heightInput.value)))) - 450).toFixed(1)
 
-    const calcBfpMasc = ((495 / ((1.0324 - 0.19077 * Math.log10(waistInput.value - neckInput.value)) +
-        (0.15456 * Math.log10(heightInput.value)))) - 450).toFixed(1)
+    const calcBfpFem = (495 / ((1.29579 - 0.35004 * Math.log10(parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value))) +
+        (0.22100 * Math.log10(parseInt(heightInput.value)))) - 450).toFixed(1)
 
-    const calcBfpFem = ((495 / ((1.29579 - 0.35004 * Math.log10(parseInt(waistInput.value) + parseInt(hipInput.value) - parseInt(neckInput.value))) +
-        (0.22100 * Math.log10(heightInput.value)))) - 450).toFixed(1)
+    const bfpResult = (genderSelect.value == 'male' ? calcBfpMasc : calcBfpFem)
 
-    resultCalcTitle.innerText = 'Resultado:'
+    resultCalcBfp.innerText = `Seu percentual de gordura corporal é de: ${bfpResult}%`
+}
 
-    if (genderSelect.value == 'male') {
-        resultCalcBfp.innerText = `Seu percentual de gordura corporal é de: ${calcBfpMasc}%`
-    } else {
-        resultCalcBfp.innerText = `Seu percentual de gordura corporal é de: ${calcBfpFem}%`
-    }
-})
+btnCalculate.addEventListener('click', calcBfp)
 
 btnClear.addEventListener('click', () => {
     ageInput.value = ''
