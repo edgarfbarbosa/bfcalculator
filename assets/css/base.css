@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: var(--bg-color);
+    font-family: 'Figtree', sans-serif;
+}
+
+:root {
+    --bg-color: #191919;
+    --bg-color-sec: #232323;
+    --body-font: #d9d9d9;
+    --title-font: #96f048;
+}

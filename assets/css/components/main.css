@@ -18,7 +18,7 @@
 }
 
 .form__label {
-    color: #f7bb0e;
+    color: var(--body-font);
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
@@ -27,7 +27,7 @@
 .form__input {
     background: #383838;
     border: none;
-    color: #d7d7d7;
+    color: var(--body-font);
     font-family: 'Figtree', sans-serif;
     font-size: 1rem;
     height: 30px;
@@ -37,9 +37,9 @@
 }
 
 .form__btn {
-    background: #f7bb0e;
+    background: #96f048;
     border: none;
-    color: #151515;
+    color: #232323;
     cursor: pointer;
     font-family: 'Figtree', sans-serif;
     font-size: 1.2rem;
@@ -52,7 +52,7 @@
 }
 
 .result__container {
-    color: #d7d7d7;
+    color: var(--body-font);
     display: flex;
     flex-direction: column;
     justify-content: center;

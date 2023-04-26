@@ -2,14 +2,14 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    min-height: 10vh;
+    object-fit: fill;
 }
 
-.header__title {
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(to right, #ffe53b, #ff2525);
-    font-size: 4rem;
-    font-weight: 700;
-    -webkit-background-clip: text;
+header {
+    padding: 24px;
+}
+
+header img {
+    max-width: 250px;
+    width: 100%;
 }
