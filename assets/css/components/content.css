@@ -1,8 +1,7 @@
 .main__container {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: center;
-    min-height: 80vh;
 }
 
 .form__container {
